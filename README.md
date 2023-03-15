@@ -23,7 +23,5 @@ Total 13 (delta 0), reused 0 (delta 0)
 To https://github.com/Khai2708/OS_lab.git
  * [new branch]      main -> main
 
-
-
-
 ```
+![image](https://user-images.githubusercontent.com/90145797/225282497-45599009-b19d-4081-ace4-4bf325f2aee1.png)
