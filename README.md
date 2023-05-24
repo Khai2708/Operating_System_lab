@@ -25,3 +25,21 @@ To https://github.com/Khai2708/OS_lab.git
 
 ```
 ![image](https://user-images.githubusercontent.com/90145797/225282497-45599009-b19d-4081-ace4-4bf325f2aee1.png)
+
+#### Week 6 & Week 7 lab work
+```
+> In week 6 & 7 we have completed Oracle cloud and build our own 
+vm ware woeking station with ubuntu
+date_purse.sh bash file created to show 
+Current Date 
+Current Time
+---------------------------------------------------------------------
+ubuntu@instance-20230405-1802:~$ nano date_parse.sh
+ubuntu@instance-20230405-1802:~$ bash date_parse.sh
+Wed May 24 13:28:55 UTC 2023
+Current Date is: 24-05-2023
+Current Time is: 13:28:55
+ubuntu@instance-20230405-1802:~$
+
+```
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/14777c55-7181-47a3-a0be-4fa46bc6b262)
