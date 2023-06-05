@@ -50,6 +50,7 @@ ubuntu@instance-20230405-1802:~$
 > In week 13 & 14 we have learned about:
 Analyzing and Storing Logs;
 Archiving and Copying Files;
+Accessing Linux File Systems
 
 -----------------------------------------------------------------------------
 > archive.tar command created with the contents of file1,file2,file3
@@ -150,3 +151,56 @@ ubuntu@instance-20230605-1452:~/oslab1$
 
 ```
 ![image](https://github.com/Khai2708/OS_lab/assets/90145797/5be3194b-3a25-4fed-a1d4-ea0dc33038a3)
+
+```
+>>> Examining file systems 
+----------------------------------------------------------------------------
+ubuntu@instance-20230605-1452:~/oslab$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+ude
+
+....... skipped
+tmpfs              98728       0     98728   0% /run/user/1001
+ubuntu@instance-20230605-1452:~/oslab$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            444M     0  444M   0% /dev
+tmpfs            97M  1.1M   96M   2% /run
+/dev/sda1        45G  2.0G   43G   5% /
+tmpfs           483M     0  483M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           483M     0  483M   0% /sys/fs/cgroup
+/dev/loop0       64M   64M     0 100% /snap/core20/1852
+/dev/loop1.. skipped
+tmpfs            97M     0   97M   0% /run/user/1001
+
+ubuntu@instance-20230605-1452:~/oslab$ du /home
+.....
+516     /home/ubuntu/oslab
+8       /home/ubuntu/.ssh
+4       /home/ubuntu/.cache
+4       /home/ubuntu/os
+24      /home/ubuntu/oslabbackup/home/ubuntu/oslab
+28      /home/ubuntu/oslabbackup/home/ubuntu
+32      /home/ubuntu/oslabbackup/home
+36      /home/ubuntu/oslabbackup
+1200    /home/ubuntu
+
+ubuntu@instance-20230605-1452:~/oslab$ du -h /home/ubuntu
+......
+480K    /home/ubuntu/oslab/.git
+516K    /home/ubuntu/oslab
+8.0K    /home/ubuntu/.ssh
+4.0K    /home/ubuntu/.cache
+4.0K    /home/ubuntu/os
+24K     /home/ubuntu/oslabbackup/home/ubuntu/oslab
+28K     /home/ubuntu/oslabbackup/home/ubuntu
+32K     /home/ubuntu/oslabbackup/home
+36K     /home/ubuntu/oslabbackup
+1.2M    /home/ubuntu
+
+ubuntu@instance-20230605-1452:~$ blkid
+/dev/sda1: LABEL="cloudimg-rootfs" UUID="d2d17c29-d0ce-47a6-83f9-012a406381de" TYPE="ext4"
+
+```
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/82101bfb-9eb9-4188-8652-b0edfd006c34)
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/0349e3aa-6752-4b15-a0f8-ca6e04f5f74b)
