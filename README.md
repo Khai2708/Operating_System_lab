@@ -1,5 +1,3 @@
-![image](https://github.com/Khai2708/OS_lab/assets/90145797/b5902cb9-3f41-4dfa-8e42-e3a316ae7a73)
-
 
 # OS_lab
 #### Week 2 & Week 3 lab work
@@ -96,8 +94,59 @@ home/ubuntu/oslab/file2
 home/ubuntu/oslab/file3
 ubuntu@instance-20230605-1452:~/oslab1$ cd ..
 ```
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/b5902cb9-3f41-4dfa-8e42-e3a316ae7a73)
 ![image](https://github.com/Khai2708/OS_lab/assets/90145797/d340011a-ee5e-4836-8ac0-c3cf6799f5bb)
 
 ```
->>
+>>> Extracting a compressed tar archive
+--------------------------------------------------------------------------------------
+ubuntu@instance-20230605-1452:~$ mkdir oslabbackup
+ubuntu@instance-20230605-1452:~$ cd oslabbackup/
+ubuntu@instance-20230605-1452:~/oslabbackup$ pwd
+/home/ubuntu/oslabbackup
+ubuntu@instance-20230605-1452:~/oslabbackup$ tar xpf /home/ubuntu/oslab1/oslab.tar
+ubuntu@instance-20230605-1452:~/oslabbackup$ ls
+home
+ubuntu@instance-20230605-1452:~/oslabbackup$ cd /home/ubuntu/oslab/
+ubuntu@instance-20230605-1452:~/oslab$ ls
+archive.tar  date_parse.sh  file1  file2  file3
+ubuntu@instance-20230605-1452:~/oslab$ cd ~/
+ubuntu@instance-20230605-1452:~$ ls
+os  oslab  oslab1  oslabbackup
+ubuntu@instance-20230605-1452:~$ pwd
+/home/ubuntu
+ubuntu@instance-20230605-1452:~$ mkdir oslabbackupbz2
+ubuntu@instance-20230605-1452:~$ cd oslabbackupbz2/
+ubuntu@instance-20230605-1452:~/oslabbackupbz2$ cd ~/oslab1/
+ubuntu@instance-20230605-1452:~/oslab1$ ls
+--xattrs  oslab.tar
+ubuntu@instance-20230605-1452:~/oslab1$ tar cjf oslabbackup3.tar.bz2 /home/ubuntu/oslab
+tar: Removing leading `/' from member names
+ubuntu@instance-20230605-1452:~/oslab1$ cd ~/oslabbackupbz2/
+ubuntu@instance-20230605-1452:~/oslabbackupbz2$ cd /home/ubuntu/oslab
+ubuntu@instance-20230605-1452:~/oslab$ ls
+archive.tar  date_parse.sh  file1  file2  file3
+ubuntu@instance-20230605-1452:~/oslab$ cd ..
+ubuntu@instance-20230605-1452:~$ ls
+os  oslab  oslab1  oslabbackup  oslabbackupbz2
+ubuntu@instance-20230605-1452:~$ oslabbackupbz2/
+-bash: oslabbackupbz2/: Is a directory
+ubuntu@instance-20230605-1452:~$ cd oslabbackupbz2/
+ubuntu@instance-20230605-1452:~/oslabbackupbz2$ ls
+home
+ubuntu@instance-20230605-1452:~/oslabbackupbz2$ cd home/ubuntu/oslab/
+ubuntu@instance-20230605-1452:~/oslabbackupbz2/home/ubuntu/oslab$ ls
+archive.tar  date_parse.sh  file1  file2  file3
+ubuntu@instance-20230605-1452:~/oslabbackupbz2/home/ubuntu/oslab$ cd ~/oslabbackupbz2/
+ubuntu@instance-20230605-1452:~/oslabbackupbz2$ cd ~/oslab1/
+ubuntu@instance-20230605-1452:~/oslab1$ tar tf oslabbackup3.tar.bz2
+home/ubuntu/oslab/
+home/ubuntu/oslab/file1
+home/ubuntu/oslab/date_parse.sh
+home/ubuntu/oslab/archive.tar
+home/ubuntu/oslab/file2
+home/ubuntu/oslab/file3
+ubuntu@instance-20230605-1452:~/oslab1$
+
 ```
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/5be3194b-3a25-4fed-a1d4-ea0dc33038a3)
