@@ -1,3 +1,6 @@
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/b5902cb9-3f41-4dfa-8e42-e3a316ae7a73)
+
+
 # OS_lab
 #### Week 2 & Week 3 lab work
 ```
@@ -43,3 +46,58 @@ ubuntu@instance-20230405-1802:~$
 
 ```
 ![image](https://github.com/Khai2708/OS_lab/assets/90145797/14777c55-7181-47a3-a0be-4fa46bc6b262)
+
+#### Week 13 & Week 14 lab work
+```
+> In week 13 & 14 we have learned about:
+Analyzing and Storing Logs;
+Archiving and Copying Files;
+
+-----------------------------------------------------------------------------
+> archive.tar command created with the contents of file1,file2,file3
+in the user's home directory
+
+ubuntu@instance-20230605-1452:~/oslab$ nano file1
+ubuntu@instance-20230605-1452:~/oslab$ rm -r file1.pdf file2.pdf file3.pdf
+ubuntu@instance-20230605-1452:~/oslab$ ls
+date_parse.sh  file1
+ubuntu@instance-20230605-1452:~/oslab$ touch file2 file3
+ubuntu@instance-20230605-1452:~/oslab$ tar cf archive.tar file1 file2 file3
+ubuntu@instance-20230605-1452:~/oslab$ ls archive.tar
+archive.tar
+ubuntu@instance-20230605-1452:~/oslab$ ls
+archive.tar  date_parse.sh  file1  file2  file3
+ubuntu@instance-20230605-1452:~/oslab$ cd ..
+ubuntu@instance-20230605-1452:~$ makdir mkdir oslab1
+ubuntu@instance-20230605-1452:~$ mkdir oslab1
+ubuntu@instance-20230605-1452:~$ cd oslab1
+ubuntu@instance-20230605-1452:~/oslab1$ tar cf ~/oslab1/oslab.tar ~/oslab
+tar: Removing leading `/' from member names
+ubuntu@instance-20230605-1452:~/oslab1$ tar cf /home/ubutu/oslab1/oslab.tar /home/ubuntu/oslab
+tar: /home/ubutu/oslab1/oslab.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+ubuntu@instance-20230605-1452:~/oslab1$ ls
+oslab.tar
+ubuntu@instance-20230605-1452:~/oslab1$ tar cf --xattrs /home/ubutu/oslab1/oslab.tar /home/ubuntu/oslab
+tar: Removing leading `/' from member names
+tar: /home/ubutu/oslab1/oslab.tar: Cannot stat: No such file or directory
+tar: Removing leading `/' from hard link targets
+tar: Exiting with failure status due to previous errors
+ubuntu@instance-20230605-1452:~/oslab1$ ls
+--xattrs  oslab.tar
+
+>>> !!!! Contents of tar archive
+ubuntu@instance-20230605-1452:~/oslab1$ tar tf oslab.tar
+home/ubuntu/oslab/
+home/ubuntu/oslab/file1
+home/ubuntu/oslab/date_parse.sh
+home/ubuntu/oslab/archive.tar
+home/ubuntu/oslab/file2
+home/ubuntu/oslab/file3
+ubuntu@instance-20230605-1452:~/oslab1$ cd ..
+```
+![image](https://github.com/Khai2708/OS_lab/assets/90145797/d340011a-ee5e-4836-8ac0-c3cf6799f5bb)
+
+```
+>>
+```
