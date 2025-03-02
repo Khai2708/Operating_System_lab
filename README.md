@@ -1,5 +1,5 @@
 
-# OS_lab
+# Operating System course lab sessions
 #### Week 2 & Week 3 lab work
 ```
 > In week 2 we made OS_lab repository and created two files inside
